@@ -1,8 +1,11 @@
 <h1>Student App</h1>
 
+<!-- Displays each students details -->
 @for(student of students;track student.id){
   <li>{{student.name}}, {{student.id}}, {{student.address}}, {{student.age}}, {{student.course}}</li>
 }
-
+<!-- Weather title-->
 <h3>Weather in Galway</h3>
+
+<!-- displays first weather objects and descriptions-->
 {{weather[0].main}}, {{weather[0].description}}
